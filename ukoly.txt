@@ -1,0 +1,364 @@
+
+ZALUZIE PRES TLACITKA
+
+Vypinani nekde je obracena logika - kontrola
+
+RELAX
+..............................................................
+
+Venku 7 zon na cidla okolo baraku, pocitat s party mod
+
+
+Zahrada 
+
+11 cidel
+
+................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+radmin
+1988amX
+
+19.7.2024
+Buffer pro pøíkazy na žaluzie.
+
+Vytvoøit a pokusit se poslat jako pøíkaz iligt.
+
+RGB ukazatele zobrazit stale a zhasnout po realase
+ZHASNUTI PRI STMIVANI ANGEL
+
+
+
+SRDCE ANGEL Blikani Vlastni scena + bila
+
+Vreteno RGB barvy stmivani Fialova, zelena, modra
+
+VRETENO KRYSTAL + CITRIN  --  BARVY 20% CERVENA, MODRA VRSEK 7% ZELENA 10%
+
+
+Budha chodba vstup + Angel pokoj  a dolni zapinat automaticky se schody a i vypnot - moznost nastavit intenzitu jako scenu a ulozit.
+prolinani  - kratka + dlouha scena + moznost od
+
+
+PO PUL NOCI RGB SCENY, STMIVANI A NASV9CENI VYPNOUT SE SCHODY, PO ZAPNUTI SE VYPNE ZA 2 HOD. ZAPINANI SE SCHODY
+
+BUDHA stejne JAKO ANDEL V LOZNICI
+
+RGB V OBYVAKU PREHRAT Z HALY
+
+2x Svetla nad  pohovkou - stropni svetla nad sedackou ON/OFF
+
+SRDCE TEP  KAMENY	
+				{
+				CALL 'ILIGHT_CHANNEL_VALUE' ((SV_1NP_OBYVAK_14),50,00)
+				CALL 'ILIGHT_CHANNEL_VALUE' ((SV_1NP_OBYVAK_09),30,00) 
+				}
+			CASE 2:
+				{
+				CALL 'ILIGHT_CHANNEL_VALUE' ((SV_1NP_OBYVAK_14),30,00)
+				CALL 'ILIGHT_CHANNEL_VALUE' ((SV_1NP_OBYVAK_09),15,00)
+				
+
+Kameny stena krb stmivani 6x 3m+ 5m  studena + tepla + dohromady.	8 scen
+Tepani i z nuly 
+
+V okne
+R+B 13
+Green 10
+Warm 12
+Cold 10
+
+15 procent krb vpravo
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Vreteno + kamen loznice - resit podobne jako krb 
+UKAZATELE 
+LOZNICE SIKMINA 
+BILA
+RED
+GREEN
+BLUE
+
+LOZNICE SRDCE SCENY
+HORNI	99	
+DOLNI	100
+TMAVA	101
+
+
+VRETENI SRDCE SCENY A16
+BILA TEPLA
+HORNI 85
+DOLNI 86
+TMAVA 87
+
+BILA STUDENA
+HORNI 88
+DOLNI 89
+TMAVA 90
+
+
+ANGEL SCENA 1
+RED 17
+GREEN 11
+BLUE 33
+White 22
+
+
+ANGEL SCENA 2
+RED 15
+GREEN 25
+BLUE 11
+White 08
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CHODBA 2NP
+
+VRETENO SC1
+HORNI 1
+TEPLA 14
+ZBYTEK 0
+
+VRETENO SC2
+HORNI 5
+TEPLA 04
+GREN 32
+BLUE 40
+ZBYTEK 0
+
+SRDCE - !! Z PROGRAMU
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+POKOJ
+
+KAMEN VPRAVO
+
+SC1
+WARM  45
+COLD  00
+
+SC2
+WARM  00
+COLD  41
+
+SRDCE STUDENA
+DOLU 43
+NAHORU 61
+TMAVA 46
+
+SRDCE TEPLA NAHORU
+DOLU 51
+NAHORU 82
+TMAVA 65
+
+//////////////////////////////////////////////
+KAMEN STRED
+
+SC1    
+WARM  37
+COLD  00
+
+SC2
+WARM  00
+COLD  40
+
+SRDCE STUDENA
+DOLU 43
+NAHORU 71
+TMAVA 45
+
+SRDCE TEPLA !!!
+DOLU W24 C29
+NAHORU W62 C53
+TMAVA W53 C36
+
+///////////////////////////////////////////
+KAMEN VLEVO
+
+SC1    
+WARM  32
+COLD  15
+
+SC2
+WARM  00
+COLD  29
+
+///////////////////////////////////////
+KAMEN VSE
+SC1
+L FLUORIT C09 W00
+S KUNZIT  C17 W00
+P AQUAMARIN C29 W00
+
+SC2
+L FLUORIT C06 W08
+S KUNZIT  C09 W13
+P AQUAMARIN C09 W28
+
+Andel 
+3m , 5s na startu akonci pauza  - bodovka proti
+5m
+
+
+bodovka max 30%
+min 1%
+hlavni min 3%
+max 100%
+
+Ukazate urovne obyvak aquamarin - fluorit prehozeny proti kamenum
+Obyvak-Pridat pocet scen - urcite pro kameny a podivat se i na druhou cast
+
+Ukazatele pro obyvak strop a jidelnu vytvorit
+Kuchyn jedou pouze RGB kraje v kruhu u vstupu. 
+pridat zakladni sceny
+pridat ovladani barev vse zatim naraz - schody dolni + horni + led pasek + kraj v kruhu (co uz mi sviti pres tlacitka)
+
+
+txt 550
+
+Horni zaluzie pres vikend jedou na CAS! ZBYTEK SOUMRAK
+
+
+loznice - jih
+
+hala 2np
+schody - vychod
+stred - zapad
+kraje - zapad
+
+koupelna 2np vychod
+
+koupelna 1np - vychod
+
+kuchyn - vychod
+
+obyvak - krb -jih
+
+obyvak zimni - zapad
+
+
+
+
+NOVE UKOLY
+ESZ - PROPOJIT - Hotovo jeste zapojit rele a privezt k topeni
+modry a oranzovy par
+POKLOP NA CIDLO
+SVETLA, SCHODY PREVEST NA SOUMRAKOVE CIDLO
+
+Kameny obyvak - SC1 ALL - Prehozen lev a prav kamen + obecne kanaly kontrola
+Loznice Angel barva soumrak - nesjede dolu
+
+
+ZALUZIE ZIMNI ZAHRADA SMER DOLU NEFUNGUJE KRATKY STISK
+PREDAT DO CIDLA SOUMRAKU, KONTROLA CASU
+
+
+ESZ - Upravit Zonu Zimni zahrada dvere 
+
+PO ZLATOZLUTA     R25  G12  B0
+UT RUZOVA         R25  G0   B8
+ST TEPLA BILA     R25  G18  B5  
+CT SVETLE ZELENA  R12  G25  B0
+PA RUBINOVA       R25  G0   B0
+SO FIALOVA        R18  G0   B25
+NE SVETLE MODRA   R0   G25  B25
+
+
+1NP Obyvak 
+Svetla nad pohovkou dodat stmívání + pamet na 2 sceny
+
+Zaluzie zz vchod je furt dole!
+
+relax a3 chyba u scen
+
+
+ area 3 zmena na 40
+ area 2 zmena na 39
+ 
+ ventilator
+ 
+ poklop A37 ch 1 UP
+			ch 2 DW
+			
+			
+Dvorky ukazatel
+ukazatel kamen vpravo neni videt
+
+Kamen u schozu pradla Area 41 kan8l 1 tepla 2 studena
+
+Cerpadla 1 A4, E1, E3
+
+....................... ukoly z 8.4.2022 ......
+vzduchotechnika
+spotrebice
+
+sonos
+zesilovac
+
+skrinka
+obaly
+
+................. ukoly z 13.7.2023.................
+koupelna 1NP svetla!
+Proverit odpojovani pri vypadku proudu, je tam obracena logika, channel OFF je zapnuto.
+PREDELAT ZNACENI NA STRANCE VYPADEK ELEKTRINY
+
+
+

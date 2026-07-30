@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace [
+
+<!-- Common Elements -->
+<!ELEMENT Identifier (#PCDATA)>
+<!ELEMENT Comments (#PCDATA)>
+<!ELEMENT MasterDirectory (#PCDATA)>
+<!ELEMENT CreationDate (#PCDATA)>
+
+<!-- Workspace Elements-->
+<!ELEMENT Workspace ( Identifier,
+               CreateVersion,
+               PJS_File?,
+               PJS_ConvertDate?,
+               PJS_CreateDate?,
+               Comments?,
+               Project*)>
+
+<!ATTLIST Workspace 
+      CurrentVersion CDATA   #REQUIRED> 
+
+<!ELEMENT CreateVersion     (#PCDATA)>
+
+
+<!-- Conversion data only: only included for files converted from the old .pjs database -->
+<!ELEMENT PJS_File (#PCDATA)>
+<!ELEMENT PJS_ConvertDate (#PCDATA)>
+<!ELEMENT PJS_CreateDate (#PCDATA)>
+
+<!ELEMENT Project ( Identifier,
+               Designer?,
+               DealerID?,
+               SalesOrder?,
+               PurchaseOrder?,
+               Comments?,
+               System*)>
+
+<!ELEMENT Designer (#PCDATA)>
+<!ELEMENT DealerID (#PCDATA)>
+<!ELEMENT SalesOrder (#PCDATA)>
+<!ELEMENT PurchaseOrder (#PCDATA)>
+
+
+<!ELEMENT System  (  Identifier,
+                 SysID,
+                 TransTCPIP?,
+                 TransSerial?,
+                 TransTCPIPEx?,
+                 TransSerialEx?,
+                 TransUSBEx?,
+                 TransVNMEx?,
+                 VirtualNetLinxMasterFlag?,
+                 VNMSystemID?,
+                 VNMIPAddress?,
+                 VNMMaskAddress?,
+                 UserName?,
+                 Password?,
+                 Comments?,
+                 File*)>
+
+<!ATTLIST System
+      IsActive   (true | false)   "false"
+      Platform   (Axcess | Netlinx)   "Axcess"
+      Transport   (Serial | Modem | TCPIP) "Serial"
+      TransportEx   (Serial | USB | TCPIP | VNM) "Serial">
+
+<!ELEMENT SysID (#PCDATA)>
+<!ELEMENT TransSerial (#PCDATA)>
+<!ELEMENT TransTCPIP (#PCDATA)>
+<!ELEMENT TransTCPIPEx (#PCDATA)>
+<!ELEMENT TransSerialEx (#PCDATA)>
+<!ELEMENT TransUSBEx (#PCDATA)>
+<!ELEMENT TransVNMEx (#PCDATA)>
+<!ELEMENT VNMSystemID (#PCDATA)>
+<!ELEMENT VNMIPAddress (#PCDATA)>
+<!ELEMENT VNMMaskAddress (#PCDATA)>
+<!ELEMENT VirtualNetLinxMasterFlag (#PCDATA)>
+<!ELEMENT UserName (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+
+
+<!ELEMENT File ( Identifier,
+               FilePathName,
+               Comments?,
+               MasterDirectory?,
+               DeviceMap*,
+               IRDB*)>
+
+<!ATTLIST File 
+       Type (Source | MasterSrc | Include | Module | AXB | IR | TPD | TP4 | TP5 | KPD | TKO | AMX_IR_DB | IRN_DB | Other | DUET | TOK | TKN | KPB | XDD ) "Other"
+       CompileType (Axcess | Netlinx | None) "None"> 
+
+<!ELEMENT FilePathName	(#PCDATA)>
+                            
+<!ELEMENT DeviceMap (DevName)>
+       <!ATTLIST DeviceMap DevAddr CDATA #REQUIRED>
+
+       <!ELEMENT DevName (#PCDATA)>
+
+<!ELEMENT IRDB    (Property,
+                 DOSName,
+                 UserDBPathName,
+                 Notes)>
+       <!ATTLIST IRDB DBKey CDATA #REQUIRED>
+
+       <!ELEMENT Property (#PCDATA)>
+       <!ELEMENT DOSName (#PCDATA)>
+       <!ELEMENT UserDBPathName (#PCDATA)>
+       <!ELEMENT Notes (#PCDATA)>
+]>
+
+<Workspace CurrentVersion="4.0"><Identifier>ZuzkaRadotin</Identifier>
+<CreateVersion>3.3</CreateVersion>
+<PJS_File></PJS_File>
+<PJS_ConvertDate></PJS_ConvertDate>
+<PJS_CreateDate></PJS_CreateDate>
+<Comments></Comments>
+<Project><Identifier>Zuska Radotin</Identifier>
+<Designer></Designer>
+<DealerID></DealerID>
+<SalesOrder></SalesOrder>
+<PurchaseOrder></PurchaseOrder>
+<Comments>Zuska Radotin</Comments>
+<System IsActive="true" Platform="Netlinx" Transport="TCPIP" TransportEx="TCPIP"><Identifier>NX-3200</Identifier>
+<SysID>1</SysID>
+<TransTCPIP>10.0.0.200:1319:1:Zuska Radotin:radmin:1988amX</TransTCPIP>
+<TransSerial>COM1,38400,8,None,1,None</TransSerial>
+<TransTCPIPEx>10.0.0.200|1319|1|Zuska Radotin|cmFkbWlu|MTk4OGFtWA</TransTCPIPEx>
+<TransSerialEx>COM1|38400|8|None|1|None|cmFkbWlu|MTk4OGFtWA</TransSerialEx>
+<TransUSBEx>|||||</TransUSBEx>
+<TransVNMEx>10.0.0.1|1|&lt;Default&gt;</TransVNMEx>
+<VirtualNetLinxMasterFlag>false</VirtualNetLinxMasterFlag>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<UserName></UserName>
+<Password></Password>
+<Comments></Comments>
+<File CompileType="Netlinx" Type="IR"><Identifier>AmpOnkyo</Identifier>
+<FilePathName>AmpOnkyo.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvAMP"><DevName>dvAMP</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Cerpadla</Identifier>
+<FilePathName>Cerpadla.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="IR"><Identifier>DVD Pioneer</Identifier>
+<FilePathName>DVD Pioneer.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvDVD"><DevName>dvDVD</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>ESZ</Identifier>
+<FilePathName>ESZ.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="Include"><Identifier>iLight</Identifier>
+<FilePathName>iLight.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>iLight2</Identifier>
+<FilePathName>iLight2.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>Master</Identifier>
+<FilePathName>Master.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Roman</Identifier>
+<FilePathName>Roman.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Solax</Identifier>
+<FilePathName>Solax.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="IR"><Identifier>SonyTuner</Identifier>
+<FilePathName>SonyTuner.IRL</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvTuner"><DevName>dvTuner</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="IR"><Identifier>SonyVHS</Identifier>
+<FilePathName>SonyVHS.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvVideo"><DevName>dvVideo</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Srdce</Identifier>
+<FilePathName>Srdce.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Teplomer</Identifier>
+<FilePathName>Teplomer.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="IR"><Identifier>TV_LG</Identifier>
+<FilePathName>TV_LG.IRL</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvTV_Obyvak"><DevName>dvTV_Obyvak</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="Other"><Identifier>ukoly</Identifier>
+<FilePathName>ukoly.txt</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Vypinani</Identifier>
+<FilePathName>Vypinani.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Zahrada</Identifier>
+<FilePathName>Zahrada.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Zaluzie</Identifier>
+<FilePathName>Zaluzie.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>ZaluzieNové</Identifier>
+<FilePathName>ZaluzieNové.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>Zidoo</Identifier>
+<FilePathName>Zidoo.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>Zuska_iPad 1024_768</Identifier>
+<FilePathName>Zuska_iPad 1024_768.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvTP1"><DevName>dvTP1</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP10"><DevName>dvTP10</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP2"><DevName>dvTP2</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP3"><DevName>dvTP3</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP4"><DevName>dvTP4</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP5"><DevName>dvTP5</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP6"><DevName>dvTP6</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP7"><DevName>dvTP7</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP8"><DevName>dvTP8</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP9"><DevName>dvTP9</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="TP4"><Identifier>Zuska_iPad_kancl</Identifier>
+<FilePathName>Zuska_iPad_kancl.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="dvTP11"><DevName>dvTP11</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP11_02"><DevName>dvTP11_02</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="dvTP11_03"><DevName>dvTP11_03</DevName>
+</DeviceMap>
+</File>
+</System>
+</Project>
+</Workspace>
