@@ -7,7 +7,7 @@ export function searchRecord(record,query){
  const metadata=[base,record.description,record.notes,...(record.groups||[]).flatMap(g=>[g.name,g.description,g.program])].join(' ');
  const items=[];
  (record.groups||[]).forEach((g,groupIndex)=>g.items.forEach((item,itemIndex)=>{
-  const local=[g.name,g.description,g.program,item.name,item.originalName,item.label,item.description,...item.tags||[]].join(' ');
+  const local=[g.name,g.description,g.program,item.name,item.originalName,item.label,item.description,item.program,...item.tags||[]].join(' ');
   if(tokens.some(t=>searchNormalise(local).includes(t))&&matches(base+' '+local))items.push({groupIndex,itemIndex});
  }));
  const inMetadata=matches(metadata),inManual=matches(base+' '+(record.manualText||''));
